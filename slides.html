@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="/dist/reset.css">
+		<link rel="stylesheet" href="/dist/reveal.css">
+		<link rel="stylesheet" href="/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					Getting started with the Solid project
+					<img class="r-stretch" src="assets/solid-emblem.svg" >
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="text-align: left">
+                            <p>Fred GUILLAUME</p>
+                            <p>Fred-el-jolo</p>
+                            <p>@FredGuillaume</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p>Frontend developer</p>
+                            <p>Planisware</p>
+                        </div>
+                    </div>
+					<aside class="notes">
+						<p>https://solidproject.org/</p>
+					</aside>
+				</section>
+				<section>
+					Driven by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>
+					<p class="fragment">Impossible mission: <span class="fragment">fix the web</span></p>
+					<p class="fragment">Do not only consume but also create content !!!</p>
+					<aside class="notes">
+						<ul>
+							<li>Creation of internet: christmas 1990 by Tim Berners-Lee @CERN</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					How ?
+					<p class="fragment">Let people reclaim their data ownership & usage</p>
+					<p class="fragment">But it is already done, by social networks for example !!!</p>
+					<p class="fragment">Hmmm yes..... but no !!!</p>
+                    <aside class="notes"></aside>
+				</section>
+				<section>
+					Current Web usage is perverted
+					<ul>
+						<li class="fragment">Private, opaque systems, not interoperable</li>
+						<li class="fragment">Data usage is ambiguous</li>
+						<li class="fragment">No control about who or what can access it</li>
+						<li class="fragment">Same data scattered accross several applications / social networks / websites</li>
+						<li class="fragment">Current attempts to fix this are not user-friendly</li>
+					</ul>
+                    <aside class="notes"></aside>
+				</section>
+				<section>
+					The Solid project is a specification
+					<p class="fragment">Data is stored in secure, decentralized storage units called Pods</p>
+                    <aside class="notes"></aside>
+				</section>
+				<section>
+					Solid server & Pod
+					<ul>
+						<li class="fragment">A solid server hosts one or multiple pods</li>
+						<li class="fragment">Each pod is isolated</li>
+						<li class="fragment">Each pod data and its access rules are unique</li>
+						<li class="fragment">Fully controlled by pod owner (indivuals, companies...)</li>
+					</ul>
+                    <aside class="notes"></aside>
+				</section>
+				<section>
+					Authentication & permissions
+					<ul>
+						<li class="fragment">Identity & permissions mechanisms</li>
+						<li class="fragment">Permissions given on set & subset of data to other users & applications</li>
+						
+					</ul>
+                    <aside class="notes"></aside>
+				</section>
+				<section>
+					<img src="assets/oidc-sequence.svg"
+							 alt="Authentication flow (Solid OIDC)">
+					<aside class="notes">
+						<ul>
+							<li class="fragment">Use OAuth & OpenID standards with some additions</li>
+							<li><a href="https://solidproject.org/TR/oidc">Solid OIDC</a></li>
+							<li><a href="https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc">OAuth & OIDC</a></li>
+							<li>TODO: Explain auth flow</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					Data description
+					<ul>
+						<li class="fragment">RDF: Resource Description Framework</li>
+						<li class="fragment">Linked data structure</li>
+					</ul>
+<pre class="fragment"><code data-line-numbers="1-13|6-12"><script type="text/template"><?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:region="http://www.country-regions.fake/">
+	<rdf:Description rdf:about="http://en.wikipedia.org/wiki/Oxford">
+		<dc:title>Oxford</dc:title>
+		<dc:coverage>Oxfordshire</dc:coverage>
+		<dc:publisher>Wikipedia</dc:publisher>
+		<region:population>10000</region:population>
+		<region:principaltown rdf:resource="http://www.country-regions.fake/oxford"/>
+	</rdf:Description>
+</rdf:RDF>
+</script></code></pre>
+					<aside class="notes">
+						<p>Notes stuff</p>
+						<p>RDF: Resource Description Framework</p> 
+						<p>Linked data structure</p>
+						<p>Existing vocabularies => https://solidproject.org/developers/vocabularies/well-known/core,  https://solidproject.org/developers/vocabularies/well-known</p>
+						Easy rdf creator
+					</aside>
+				</section>
+				<section>
+					Solid Pod demo !!!!!
+                    <p><a href="https://jolo-test.solidcommunity.net/">Jolo-test pod</a></p>
+                    <aside class="notes">
+						<ol>
+                            <li>Login</li>
+                            <li>Unlogged profile view</li>
+                            <li>public folder, create text file</li>
+                            <li>Unlogged cannot edit text file</li>
+                            <li>Authorize unlogged users to edit text file</li>
+                            <li>Unlogged can edit text file</li>
+                        </ol>
+					</aside>
+				</section>
+				<section>
+					Solid applications demo !!!!
+                    <aside class="notes">
+						<ol>
+                            <li>Code OSS</li>
+                        </ol>
+					</aside>
+				</section>
+				<section>
+					Questions ?
+					<p></p>
+					<aside class="notes">
+						<p>Notes stuff</p>
+					</aside>
+				</section>
+				<section>
+					Thanks !!!
+					<p></p>
+					<aside class="notes">
+						<p>Todo</p>
+						<ul>
+							<li>Finish slides</li>
+							<li>add images</li>
+							<li>finish livecoding</li>
+							<li>prepare vs code snippets</li>
+							<li>give refs</li>
+							<li>read specs</li>
+							<li>Fix theme</li>
+						</ul>
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="/dist/reveal.js"></script>
+		<script src="/plugin/notes/notes.js"></script>
+		<script src="/plugin/markdown/markdown.js"></script>
+		<script src="/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				slideNumber: "c/t",
+				hash: true,
+				// hashOneBasedIndex: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
