@@ -162,4 +162,3 @@ if (!session.info.isLoggedIn) {
 }
 
 displayLoginPage();
-

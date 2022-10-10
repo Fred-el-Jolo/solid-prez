@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="/dist/reset.css">
 		<link rel="stylesheet" href="/dist/reveal.css">
 		<link rel="stylesheet" href="/dist/theme/black.css">
+		<link rel="stylesheet" href="assets/slides.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="/plugin/highlight/monokai.css">
@@ -17,17 +18,25 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					Getting started with the Solid project
-					<img class="r-stretch" src="assets/solid-emblem.svg" >
+					<p class="r-fit-text">Getting started with the Solid project 🚀</p>
+					<p>
+						<div class="flip-container">
+						<div class="flipper">
+						  <div class="front">
+						  </div>
+						  <div class="back">
+						  </div>
+						</div>
+					  </div></p>
                     <div style="display: flex; justify-content: space-between;">
                         <div style="text-align: left">
                             <p>Fred GUILLAUME</p>
-                            <p>Fred-el-jolo</p>
-                            <p>@FredGuillaume</p>
+                            <p class="inlineFlex"><img src='assets/GitHub-Mark-Light-64px.png' width="32" height="32">&nbsp;<a href="https://github.com/Fred-el-Jolo">Fred-el-Jolo</a></p>
+                            <p class="inlineFlex"><img src='assets/Twitter social icons - circle - white.svg' width="32" height="32">&nbsp;<a href="https://twitter.com/fredguillaume">fredguillaume</a></p>
                         </div>
                         <div style="text-align: left">
                             <p>Frontend developer</p>
-                            <p>Planisware</p>
+                            <p class="inlineFlex">@<a href="https://www.planisware.com/">Planisware</a>&nbsp;<img src='assets/orchestra.jpg' width="32" height="32"></p>
                         </div>
                     </div>
 					<aside class="notes">
@@ -35,54 +44,67 @@
 					</aside>
 				</section>
 				<section>
-					Driven by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>
-					<p class="fragment">Impossible mission: <span class="fragment">fix the web</span></p>
-					<p class="fragment">Do not only consume but also create content !!!</p>
+					<p class="r-fit-text">Driven by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a></p>
+					<div class="r-stack">
+						<img class="fragment fade-in-then-out" src="assets/tim-berners-lee.jpg" >
+						<img class="fragment fade-in-then-out" src="assets/mission-impossible-the-1988-tv-series.jpg" >
+						<img class="fragment fade-in-then-out" src="assets/web-fix.png" >
+					</div>
 					<aside class="notes">
 						<ul>
 							<li>Creation of internet: christmas 1990 by Tim Berners-Lee @CERN</li>
+							<li>Impossible mission: fix the web</li>
+							<li>Do not only consume but also create content !!!</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					How ?
-					<p class="fragment">Let people reclaim their data ownership & usage</p>
-					<p class="fragment">But it is already done, by social networks for example !!!</p>
-					<p class="fragment">Hmmm yes..... but no !!!</p>
+					<p>How ?</p>
+					<p class="fragment">Let people reclaim their <span class="strong green">data ownership & usage</span></p>
+					
+					<div class="fragment blue-background bubble bubble-left">But it is already done, by social networks for example !!!</div>
+					<div class="fragment dark-orange-background bubble bubble-right">Hmmm yes..... but no !!!</div>
+
+					<p class="fragment">Current Web usage is <span class="strong red">perverted</span> 😱</p>
+
+                    <aside class="notes">
+						<ul>
+							<li>Private, opaque systems, not interoperable</li>
+							<li>Data usage is ambiguous</li>
+							<li>No control about who or what can access it</li>
+							<li>Same data scattered accross several applications / social networks / websites</li>
+							<li>Current attempts to fix this are not user-friendly</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+
                     <aside class="notes"></aside>
 				</section>
 				<section>
-					Current Web usage is perverted
+					<p class="r-fit-text">The Solid project is a <span class="strong yellow">specification</span> 📜</p>
+					<p class="fragment">Data is stored in <span class="strong blue">secure, decentralized</span> storage units called <span class="strong green">Pods</span></p>
+                    <aside class="notes">
+						<ul>
+							<li>relies on standard protocols (TLS, RDF, HTML...)</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<p class="r-fit-text">Solid server & Pod</p>
 					<ul>
-						<li class="fragment">Private, opaque systems, not interoperable</li>
-						<li class="fragment">Data usage is ambiguous</li>
-						<li class="fragment">No control about who or what can access it</li>
-						<li class="fragment">Same data scattered accross several applications / social networks / websites</li>
-						<li class="fragment">Current attempts to fix this are not user-friendly</li>
+						<li class="fragment">A <span class="strong orange">solid server</span> hosts one or multiple pods</li>
+						<li class="fragment">Each pod is <span class="strong blue">isolated</span></li>
+						<li class="fragment">Each pod <span class="strong green">data</span> and its <span class="strong green">access rules</span> are <span class="strong green">unique</span></li>
+						<li class="fragment">Fully controlled by <span class="strong red">pod owner</span> (indivuals, companies...)</li>
 					</ul>
                     <aside class="notes"></aside>
 				</section>
 				<section>
-					The Solid project is a specification
-					<p class="fragment">Data is stored in secure, decentralized storage units called Pods</p>
-                    <aside class="notes"></aside>
-				</section>
-				<section>
-					Solid server & Pod
+					<p class="r-fit-text">Authentication & permissions 🔞</p>
 					<ul>
-						<li class="fragment">A solid server hosts one or multiple pods</li>
-						<li class="fragment">Each pod is isolated</li>
-						<li class="fragment">Each pod data and its access rules are unique</li>
-						<li class="fragment">Fully controlled by pod owner (indivuals, companies...)</li>
-					</ul>
-                    <aside class="notes"></aside>
-				</section>
-				<section>
-					Authentication & permissions
-					<ul>
-						<li class="fragment">Identity & permissions mechanisms</li>
-						<li class="fragment">Permissions given on set & subset of data to other users & applications</li>
-						
+						<li class="fragment"> <span class="strong yellow">Identity & permissions</span> mechanisms 🪪</li>
+						<li class="fragment">Permissions given on <span class="strong blue">set & subset of data</span> to other users & applications</li>
 					</ul>
                     <aside class="notes"></aside>
 				</section>
@@ -102,7 +124,7 @@
 					Data description
 					<ul>
 						<li class="fragment">RDF: Resource Description Framework</li>
-						<li class="fragment">Linked data structure</li>
+						<li class="fragment"> <span class="strong green">Linked data</span> structure</li>
 					</ul>
 <pre class="fragment"><code data-line-numbers="1-13|6-12"><script type="text/template"><?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
@@ -127,7 +149,7 @@
 					</aside>
 				</section>
 				<section>
-					Solid Pod demo !!!!!
+					Solid Pod <span class="strong yellow">demo</span> !!!!! ✨
                     <p><a href="https://jolo-test.solidcommunity.net/">Jolo-test pod</a></p>
                     <aside class="notes">
 						<ol>
@@ -141,7 +163,7 @@
 					</aside>
 				</section>
 				<section>
-					Solid applications demo !!!!
+					Solid applications <span class="strong orange">demo</span> !!!! 🪩
                     <aside class="notes">
 						<ol>
                             <li>Code OSS</li>
@@ -149,25 +171,21 @@
 					</aside>
 				</section>
 				<section>
-					Questions ?
-					<p></p>
+					<span class="red">Q</span><span class="blue">u</span><span class="yellow">e</span><span class="green">s</span><span class="orange">t</span><span class="red">i</span><span class="blue">o</span><span class="yellow">n</span><span class="green">s</span> ⁉️
 					<aside class="notes">
 						<p>Notes stuff</p>
 					</aside>
 				</section>
 				<section>
-					Thanks !!!
-					<p></p>
+					<span class="red">T</span><span class="blue">h</span><span class="yellow">a</span><span class="green">n</span><span class="orange">k</span><span class="red">s</span> ‼️
 					<aside class="notes">
 						<p>Todo</p>
 						<ul>
-							<li>Finish slides</li>
-							<li>add images</li>
-							<li>finish livecoding</li>
+							<li>finish livecoding (include icons)</li>
 							<li>prepare vs code snippets</li>
-							<li>give refs</li>
-							<li>read specs</li>
-							<li>Fix theme</li>
+							<li>give refs (solid std protocols)</li>
+							<li>oidc</li>
+
 						</ul>
 					</aside>
 				</section>
